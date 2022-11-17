@@ -1,0 +1,40 @@
+{
+  "name": "docusaurus-plugin-astroturf",
+  "version": "1.7.0",
+  "main": "lib/index.js",
+  "repository": {
+    "directory": "packages/astroturf",
+    "type": "git",
+    "url": "https://github.com/jquense/docusaurus-plugins.git"
+  },
+  "author": "4Catalyzer",
+  "license": "MIT",
+  "scripts": {
+    "build": "4c build src",
+    "prepublishOnly": "yarn run build",
+    "tdd": "jest --watch",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@4c/babel-preset": "^10.2.0",
+    "@4c/cli": "^3.0.1",
+    "@4c/jest-preset": "^1.8.0",
+    "@4c/prettier-config": "^1.1.0",
+    "@4c/tsconfig": "^0.4.1",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@docusaurus/types": "^2.2.0",
+    "@types/node": "18.6.5",
+    "babel-preset-env-modules": "^1.0.1"
+  },
+  "dependencies": {
+    "@types/find-cache-dir": "^3.2.1",
+    "astroturf": "^1.0.1",
+    "find-cache-dir": "^3.3.1"
+  },
+  "gitHead": "00e893b2a5edcc13f69a6bbc1e02246de05b051f"
+}
